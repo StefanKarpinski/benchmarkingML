@@ -1,8 +1,8 @@
 using DelimitedFiles, Statistics
 
 # Load grid for log(y) and transition matrix
-logy_grid = readdlm("logy_grid.txt")[:]
-Py = readdlm("P.txt")
+const logy_grid = readdlm("logy_grid.txt")[:]
+const Py = readdlm("P.txt")
 
 
 function main(nB=351, repeats=500)
